@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index4.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="sidebar glass">
+                <span class="material-icons-outlined ">grid_view</span>
+                <span class="material-icons-outlined ">place</span>
+                <span class="material-icons-outlined">map</span>
+                <span class="material-icons-outlined active">public</span>
+                <span class="material-icons-outlined">today</span>
+                <span class="material-icons-outlined">settings</span>
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined"><img style="width: 3.6rem;" src="images/man.png" alt=""></span>
+            </div>
+
+            <div class="main">
+
+                <div class="row">
+
+                    <div class="colmn glass wd-30">
+
+                        <div style="display:flex; align-items: center;">
+                            <img src="images/apple.png" alt="">
+                            <h3 style="margin-left: 12px;">Most Popular</h3>
+                        </div>
+
+                        <div class="music">
+                            <div onclick="nextAppleMusic(-1)" class="play_previous">❮</div>
+                            <div style="width: 80%;" class="apple_music_player">
+                                <img style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" class="thumbnail"
+                                    src="https://i.ytimg.com/vi/GB_S2qFh5lU/maxresdefault.jpg" alt="">
+                                <label for="song_name">NO Time To Die</label>
+                                <label for="author">Billie Ellish</label>
+                                <button class="apple_music_play_btn">Play Now</button>
+                            </div>
+
+                            <div style="width: 80%;" class="apple_music_player">
+                                <img style="width: 100%;height: 150px; object-fit: cover; border-radius: 8px;" class="thumbnail"
+                                    src="https://content.wepik.com/statics/13883573/preview-page0.jpg" alt="">
+                                <label for="song_name">NO Time To Die</label>
+                                <label for="author">Billie Ellish</label>
+                                <button class="apple_music_play_btn">Play Now</button>
+                            </div>
+                            <div onclick="nextAppleMusic(1)" class="play_next">❯</div>
+                        </div>
+                    </div>
+
+                    <div style="max-height: 310px;" class="colmn glass wd-70 scroll">
+                        <h3>What's Up With Music?</h3>
+                        <div class="grid">
+                            <div class="card glass">
+                                <img class="icon" src="images/facebook.png" alt="">
+                                <img class="post_img"
+                                    src="https://img.freepik.com/free-vector/vector-illustration-mountain-landscape_1441-72.jpg?w=2000"
+                                    alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="post_action">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="icon" src="images/heart.png" alt="">
+                                        <label for="count">1.2k</label>
+                                    </div>
+                                    <button class="more">Read More</button>
+                                </div>
+                            </div>
+
+                            <div class="card glass">
+                                <img class="icon" src="images/facebook.png" alt="">
+                                <img class="post_img"
+                                    src="https://static.vecteezy.com/system/resources/thumbnails/000/247/824/small/vector-beautiful-landscape-illustration.jpg"
+                                    alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="post_action">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="icon" src="images/heart.png" alt="">
+                                        <label for="count">1.2k</label>
+                                    </div>
+                                    <button class="more">Read More</button>
+                                </div>
+                            </div>
+
+                            <div class="card glass">
+                                <img class="icon" src="images/instagram.png" alt="">
+                                <img class="post_img"
+                                    src="https://i.pinimg.com/736x/24/fa/5f/24fa5fb54ca2c725df93d72a9ffe6426.jpg"
+                                    alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="post_action">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="icon" src="images/heart.png" alt="">
+                                        <label for="count">1.2k</label>
+                                    </div>
+                                    <button class="more">Read More</button>
+                                </div>
+                            </div>
+
+
+                            <div class="card glass">
+                                <img class="icon" src="images/twitter.png" alt="">
+                                <img class="post_img"
+                                    src="https://cdn.pixabay.com/photo/2017/05/27/21/59/dancer-2349565__480.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="post_action">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="icon" src="images/heart.png" alt="">
+                                        <label for="count">1.2k</label>
+                                    </div>
+                                    <button class="more">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="colmn glass wd-30">
+
+                        <div style="display:flex; align-items: center;">
+                            <img src="images/spotify.png" alt="">
+                            <h3 style="margin-left: 12px;">Today's Hits</h3>
+                        </div>
+
+                        <div style="margin-top: 28px;" class="music">
+                            <div onclick="nextSpotifyMusic(-1)" class="play_previous">❮</div>
+                            <div style="width: 80%;" class="spotify_music_player">
+                                <img style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" class="thumbnail"
+                                    src="https://upload.wikimedia.org/wikipedia/en/1/1e/Focus_cover_art.png" alt="">
+                                <label for="song_name">Focus</label>
+                                <label for="author">Ariana Grande</label>
+                                <button class="spotify_music_play_btn">Play Now</button>
+                            </div>
+
+                            <div style="width: 80%;" class="spotify_music_player">
+                                <img style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" class="thumbnail"
+                                    src="https://content.wepik.com/statics/13883573/preview-page0.jpg" alt="">
+                                <label for="song_name">NO Time To Die</label>
+                                <label for="author">Billie Ellish</label>
+                                <button class="spotify_music_play_btn">Play Now</button>
+                            </div>
+                            <div onclick="nextSpotifyMusic(1)" class="play_next">❯</div>
+                        </div>
+
+                    </div>
+
+                    <div class="colmn wd-70">
+                        <h3 style="margin-bottom: 12px;">What's Sound Good?</h3>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="https://www.billboard.com/wp-content/uploads/2022/09/selena-gomez-courtesy-of-apple-2022-billboard-1548.jpg"
+                                    style="width:100%;height: 300px;object-fit: cover; border-radius: 8px;opacity: 0.4;">
+                                <div class="text">
+                                    <img src="images/icons8-youtube-music-48.png" alt="">
+                                    <h1 style="font-size: 3rem;">Selena Gomez: My Mind & Me Official Trailer</h1>
+                                    <label for="views">12,923 views</label> <br>
+                                    <button class="youtube_watch_btn">Watch Now</button>
+                                </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="https://i.pinimg.com/736x/a3/81/dc/a381dc33ea5029625cc001a05fb8710a.jpg"
+                                    style="width:100%;height: 300px;object-fit: cover;border-radius: 8px;opacity: 0.4;">
+                                <div class="text">
+                                    <img src="images/icons8-youtube-music-48.png" alt="">
+                                    <h1 style="font-size: 3rem;">Selena Gomez: My Mind & Me Official Trailer</h1>
+                                    <label for="views">12,923 views</label> <br>
+                                    <button class="youtube_watch_btn">Watch Now</button>
+                                </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="https://images.squarespace-cdn.com/content/v1/5efce5920d28887981c5bd9b/1613667353831-UB84FLKOWQUZFI3BKSXP/Mortal+Kombat+banner.jpeg"
+                                    style="width:100%;height: 300px;object-fit: cover;border-radius: 8px;opacity: 0.4;">
+                                <div class="text">
+                                    <img src="images/icons8-youtube-music-48.png" alt="">
+                                    <h1 style="font-size: 3rem;">Selena Gomez: My Mind & Me Official Trailer</h1>
+                                    <label for="views">12,923 views</label> <br>
+                                    <button class="youtube_watch_btn">Watch Now</button>
+                                </div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    // Apple Music Player 
+    let appleMusicIndex = 1;
+    showAppleMusic(appleMusicIndex);
+
+    function nextAppleMusic(x) {
+        showAppleMusic(appleMusicIndex += x);
+    }
+
+    function currentMusic(x) {
+        showAppleMusic(appleMusicIndex = x);
+    }
+
+    function showAppleMusic(x) {
+        let j;
+        let AppleMusicList = document.getElementsByClassName("apple_music_player");
+
+        if (x > AppleMusicList.length) { appleMusicIndex = 1 }
+        if (x < 1) { appleMusicIndex = AppleMusicList.length }
+        for (j = 0; j < AppleMusicList.length; j++) {
+            AppleMusicList[j].style.display = "none";
+        }
+        AppleMusicList[appleMusicIndex - 1].style.display = "flex";
+    }
+
+    // Spotify Music Player
+    let spotifyMusicIndex = 1;
+    showSpotifyMusic(spotifyMusicIndex);
+
+    function nextSpotifyMusic(y) {
+        showSpotifyMusic(spotifyMusicIndex += y);
+    }
+
+    function currentMusic(y) {
+        showSpotifyMusic(spotifyMusicIndex = y);
+    }
+
+    function showSpotifyMusic(y) {
+        let k;
+        let spotifyMusicList = document.getElementsByClassName("spotify_music_player");
+
+        if (y > spotifyMusicList.length) { spotifyMusicIndex = 1 }
+        if (y < 1) { spotifyMusicIndex = spotifyMusicList.length }
+        for (k = 0; k < spotifyMusicList.length; k++) {
+            spotifyMusicList[k].style.display = "none";
+        }
+        spotifyMusicList[spotifyMusicIndex - 1].style.display = "flex";
+    }
+
+    // Slideshow
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>

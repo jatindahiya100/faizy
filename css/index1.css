@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  background-color: #0d100f;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+.container {
+  margin: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 16px;
+  left: 0;
+  width: 80px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+}
+.colmn {
+  margin: 1%;
+  padding: 16px;
+}
+.wd-30 {
+  width: 30%;
+}
+.wd-70 {
+  width: 70%;
+}
+.active {
+  background-color: #0d100f91;
+  color: rgb(255, 255, 255);
+}
+/* Glass Effect */
+.glass {
+  background: url("../images/gradient.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  ); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.material-icons-outlined {
+  padding: 8px;
+  border-radius: 50%;
+  margin-top: 36px;
+  color: rgba(255, 255, 255, 0.63);
+}
+.material-icons-outlined:hover {
+  transition: 0.2s;
+  background-color: #0d100f91;
+  color: rgb(255, 255, 255);
+}
+
+.hashtag {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h3 {
+  font-size: 1.6rem;
+  color: white;
+}
+label[for="hashtag"] {
+  font-size: 1.6rem;
+  margin: 2% 1%;
+  background-color: rgba(128, 128, 128, 0.712);
+  padding: 8px 26px;
+  border-radius: 18px;
+  color: white;
+  word-spacing: 1px;
+}
+.scroll {
+  overflow-y: auto;
+}
+.grid {
+  padding-top: 12px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(128, 128, 128, 0.712);
+  border-radius: 12px;
+}
+label[for="count"] {
+  margin-left: 6px;
+  font-size: 12px;
+}
+label[for="views"] {
+  padding-top: 20px;
+}
+.icon {
+  width: 18px;
+}
+.post_img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin: 12px 0;
+  border-radius: 12px;
+}
+p {
+  font-size: 14px;
+  word-spacing: 2px;
+}
+.post_action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.more {
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 4px 12px;
+  width: max-content;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #4e2dff;
+}
+.youtube_watch_btn {
+  margin-top: 24px;
+  width: 140px;
+  padding: 12px 18px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #f61c0d;
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background: black;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1.6rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1.6rem;
+  padding: 8px 12px;
+  position: absolute;
+  left: 8%;
+  top: 30px;
+  width: 70%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0;
+    flex-direction: column;
+  }
+  .sidebar {
+    padding: 8px;
+    width: 100%;
+    transition: 1s;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .material-icons-outlined {
+    margin-top: 0;
+  }
+  .row {
+    transition: 1s;
+    flex-direction: column;
+  }
+  .wd-30 {
+    transition: 1s;
+    width: 100%;
+  }
+  .wd-70 {
+    transition: 1s;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
